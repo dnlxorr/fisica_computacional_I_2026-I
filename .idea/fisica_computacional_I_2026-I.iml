@@ -6,6 +6,19 @@
       <excludeFolder url="file://$MODULE_DIR$/juanv/Hola/target" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/Rafael_Lemus/Rust_SharoonJ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/sumatoria_numeros_SharoonJ/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hola/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/Rafael_Lemus/Rust_SharoonJ/target" />
+      <excludeFolder url="file://$MODULE_DIR$/sumatoria_numeros_SharoonJ/target" />
+      <excludeFolder url="file://$MODULE_DIR$/hola/target" />
+      <excludeFolder url="file://$MODULE_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
