@@ -205,7 +205,8 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-/.idea/fisica_computacional_I_2026-I.iml
+/.idea/Fisica_Computacional_1.iml
+/.idea/Holis.iml
 /.idea/misc.xml
 /.idea/modules.xml
 /.idea/inspectionProfiles/profiles_settings.xml
