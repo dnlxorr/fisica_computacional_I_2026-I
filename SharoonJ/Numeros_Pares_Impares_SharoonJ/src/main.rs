@@ -55,8 +55,8 @@ fn main() {
 
     println!("Lista de numeros: {:?}", lista);
     println!("Lista de primos: {:?}", primos);
-    println!("Pares: {:?}", pares);
-    println!("Impares: {:?}", impares);
+    println!("Numeros Pares: {:?}", pares);
+    println!("Numeros Impares: {:?}", impares);
 
     println!("Cantidad de pares: {}", pares.len());
     println!("Cantidad de impares: {}", impares.len());
