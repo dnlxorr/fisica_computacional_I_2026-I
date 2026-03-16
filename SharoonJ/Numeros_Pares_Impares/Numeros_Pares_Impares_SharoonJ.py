@@ -34,8 +34,8 @@ try:
         print("Lista de numeros:", lista)
         print("Lista de primos:", primos)
 
-        print("Pares:", pares)
-        print("Impares:", impares)
+        print("Numeros Pares:", pares)
+        print("Numeros Impares:", impares)
 
         print("Cantidad de Pares:", len(pares))
         print("Cantidad de Impares:", len(impares))
