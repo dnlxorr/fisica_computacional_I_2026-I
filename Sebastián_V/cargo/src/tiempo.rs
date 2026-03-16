@@ -1,6 +1,6 @@
 use std::time::Instant;
 
-fn main() {
+pub(crate) fn tiempo_ejecucion(){
     // Tiempo inicial
     let inicio = Instant::now();
 
