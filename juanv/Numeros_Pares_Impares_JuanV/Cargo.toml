@@ -1,0 +1,6 @@
+[package]
+name = "Numeros_Pares_Impares_JuanV"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

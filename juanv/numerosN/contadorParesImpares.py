@@ -1,18 +1,20 @@
-# Pedir un número entero positivo
-n = int(input("Ingrese un número entero positivo: "))
+n = int(input("Ingrese un numero entero positivo: "))
 
-pares = 0
-impares = 0
+par = []
+imp = []
+lista = list(range(0, n+1))
+print("La lista numeros", lista)
 
-print("Lista de números:")
+for i in range(0, n + 1):
 
-for i in range(1, n + 1):
-    print(i)
 
     if i % 2 == 0:
-        pares += 1
+        par.append(i)
     else:
-        impares += 1
+        imp.append(i)
 
-print("Cantidad de números pares:", pares)
-print("Cantidad de números impares:", impares)
+
+print("Pares:", par)
+print("Impares:", imp)
+print("Cantidad de Pares:", len(par))
+print("Cantidad de Impares:", len(imp))
