@@ -18,7 +18,7 @@
       <excludeFolder url="file://$MODULE_DIR$/hola/target" />
       <excludeFolder url="file://$MODULE_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/target" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
