@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Dataset_de_uso_de_celular_Python_SharoonJ/Dataset1_Sharoon1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Dataset_de_uso_de_celular_Python_SharoonJ/Dataset2_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Grafica_aproxiamcion_de_Taylor_Python_SharoonJ/Grafica_exp_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Hello_Python_SharoonJ/Hello_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Numeros_Primos_Impares_Pares_Python_SharoonJ/Numeros_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Stack_Python_SharoonJ/Stack_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Tiempo_Python_SharoonJ/Tiempo_SharoonJ.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Python_SharoonJ/Variables_Python_SharoonJ/Variavbles_SharoonJ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharoonJ/Tiempo_Rust_SharoonJ/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SharoonJ/hello_word.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tiempo_SharoonJ.py" beforeDir="false" />
-    </list>
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -209,7 +194,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773977214524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras">
+      <option name="closed" value="true" />
+      <created>1775534533794</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1775534533794</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +224,8 @@
     <MESSAGE value="Timer que cuenta el tiempo que tarda el programa en sumar los numeros de 1 a 100" />
     <MESSAGE value="Contador añadido" />
     <MESSAGE value="stack y Queue añadido" />
-    <option name="LAST_COMMIT_MESSAGE" value="stack y Queue añadido" />
+    <MESSAGE value="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
