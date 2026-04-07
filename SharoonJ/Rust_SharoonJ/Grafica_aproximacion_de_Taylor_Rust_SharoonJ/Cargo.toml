@@ -1,0 +1,7 @@
+[package]
+name = "tu_proyecto"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+plotters = { versiSon = "0.3", features = ["bitmap_encoder"] }

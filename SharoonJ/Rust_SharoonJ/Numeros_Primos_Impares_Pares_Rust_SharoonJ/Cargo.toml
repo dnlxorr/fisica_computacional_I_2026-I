@@ -1,0 +1,6 @@
+[package]
+name = "Numeros_Primos_Impares_Pares_Rust_SharoonJ"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
