@@ -1,9 +1,9 @@
 # caida_libre.py
-# Ejemplo de variables y estructuras de control en Python
+# Ejemplo de variables y estructuras de control en Python_SharoonJ
 # Característica principal: Tipado dinámico y sintaxis limpia
 
 # --- 1. VARIABLES ---
-# En Python no declaramos el tipo, ocupa más memoria en RAM pero es más rápido de programar.
+# En Python_SharoonJ no declaramos el tipo, ocupa más memoria en RAM pero es más rápido de programar.
 gravedad = 9.81  # float (decimal) - Ocupa aprox. 24 bytes
 tiempo_maximo = 5  # int (entero) - Ocupa aprox. 28 bytes
 en_movimiento = True  # bool (booleano) - Ocupa aprox. 28 bytes
@@ -25,6 +25,6 @@ for t in range(tiempo_maximo + 1):
     else:
         print(f"T={t}s: ¡Alta velocidad! ({velocidad:.2f} m/s).")
 
-# Reasignamos la variable (Python lo permite libremente)
+# Reasignamos la variable (Python_SharoonJ lo permite libremente)
 en_movimiento = False
 print("Simulación terminada.")
