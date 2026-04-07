@@ -3,13 +3,21 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ/Cargo.toml">
+      <package file="$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -52,6 +60,9 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="RdK0TZrU" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -146,6 +157,9 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -219,7 +233,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775534533794</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
+      <option name="closed" value="true" />
+      <created>1775537303214</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775537303214</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,18 +264,8 @@
     <MESSAGE value="Contador añadido" />
     <MESSAGE value="stack y Queue añadido" />
     <MESSAGE value="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/SharoonJ/Numeros_Pares_Impares/Numeros_Pares_Impares_SharoonJ.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
+    <option name="LAST_COMMIT_MESSAGE" value="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
