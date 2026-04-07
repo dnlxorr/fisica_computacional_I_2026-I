@@ -1,0 +1,17 @@
+[package]
+name = "untitled"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Peticiones HTTP
+reqwest = { version = "0.11", default-features = false, features = ["blocking", "rustls-tls"] }
+
+# Manipulación de datos (DataFrames)
+polars = { version = "0.41", features = ["lazy", "csv"] }
+
+# Gráficos
+plotters = "0.3"
+
+# Manejo de fechas
+chrono = "0.4"
