@@ -4,25 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="CargoProjects">
-    <cargoProject FILE="$PROJECT_DIR$/CristianV/CristianRust/Cargo/Cargo.toml">
-      <package file="$PROJECT_DIR$/CristianV/CristianRust/Cargo">
+    <cargoProject FILE="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml">
+      <package file="$PROJECT_DIR$/Sebastián_V/Sebas-Rust">
         <feature name="default" enabled="true" />
       </package>
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="codigos completos de Python del Primer corte">
-      <change afterPath="$PROJECT_DIR$/CristianV/CristianRust/Cargo/src/Error_Conteo.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CristianV/CristianRust/Cargo/src/stack_queue.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/CristianRust/Cargo/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianRust/Cargo/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/Hello_Word.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/NUEVO.rs" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/Stack_Queue.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/NumerosPares_Impares.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/NumerosPares_Impares.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/time_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/time_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/variables.py" afterDir="false" />
-    </list>
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Añadidura completa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,7 +64,7 @@
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
   </component>
   <component name="MacroExpansionManager">
-    <option name="directoryName" value="surydnEb" />
+    <option name="directoryName" value="4yLnWw03" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -96,7 +85,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Cargo.Run untitled.executor": "Run",
+    "Cargo.Run Sebas-Rust.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Contador.executor": "Run",
     "Python.Contadotr.executor": "Run",
@@ -115,7 +104,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "stack__queue-CristianVargas",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/velas/PycharmProjects/fisica_computacional_I_2026-I/juanv/Python_JuanV",
@@ -134,15 +123,12 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\velas\PycharmProjects\fisica_computacional_I_2026-I\juanv\Python_JuanV" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/CristianV/CristianPython" />
-    </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run untitled">
-    <configuration name="Run untitled" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+  <component name="RunManager" selected="Cargo.Run Sebas-Rust">
+    <configuration name="Run Sebas-Rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="buildProfileId" value="dev" />
-      <option name="command" value="run --package untitled --bin untitled" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/CristianV/CristianRust/Cargo" />
+      <option name="command" value="run --package Sebas-Rust --bin Sebas-Rust" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/Sebastián_V/Sebas-Rust" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -165,11 +151,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Python 3.13" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sebastián_V/Sebastian_Python" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="true" />
       <module name="" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Dataset_Clima_Barras.py" />
@@ -181,14 +167,9 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <list>
-      <item itemvalue="Cargo.Run untitled" />
-      <item itemvalue="Python.Dataset_Clima_Barras" />
-    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run untitled" />
-        <item itemvalue="Python.Dataset_Clima_Barras" />
+        <item itemvalue="Cargo.Run Sebas-Rust" />
       </list>
     </recent_temporary>
   </component>
@@ -283,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775840132314</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Añadidura completa">
+      <option name="closed" value="true" />
+      <created>1775844770635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775844770635</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,18 +295,8 @@
     <MESSAGE value="Contador añadido" />
     <MESSAGE value="stack y Queue añadido" />
     <MESSAGE value="codigos completos de Python del Primer corte" />
-    <option name="LAST_COMMIT_MESSAGE" value="codigos completos de Python del Primer corte" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/CristianV/CristianRust/Cargo/src/main.rs</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Añadidura completa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadidura completa" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
