@@ -1,0 +1,6 @@
+[package]
+name = "Dataset_de_uso_de_celular_Rust_SharoonJ"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]

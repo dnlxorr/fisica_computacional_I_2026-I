@@ -1,0 +1,10 @@
+[package]
+name = "Dataset2_Sharoon1"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+csv = "1.4.0"
+plotters = "0.3.7"
+serde = { version = "1.0.228", features = ["derive"] }
+reqwest = "0.13.2"
