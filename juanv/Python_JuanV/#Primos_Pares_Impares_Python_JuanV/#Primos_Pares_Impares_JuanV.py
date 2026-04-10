@@ -2,7 +2,7 @@ try:
     n = int(input("Ingrese un número entero positivo: "))
 
     if n <= 0:
-        print("Error >_< ingresar un número entero positivo.")
+        print("Error ingresar un número entero positivo.")
     else:
         # Lista principal
         lista = list(range(1, n + 1))
