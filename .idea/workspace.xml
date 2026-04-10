@@ -107,6 +107,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\velas\PycharmProjects\fisica_computacional_I_2026-I\juanv\Python_JuanV" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Dataset_Clima_Barras" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="ENV_FILES" value="" />
