@@ -27,5 +27,5 @@ def clasificar_numeros(n):
     print(f"Primos ({len(primos)}): {primos}")
 
 
-# Ejemplo de uso con n = 20
+
 clasificar_numeros(20)
