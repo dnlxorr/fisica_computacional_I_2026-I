@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="codigos completos de Python del Primer corte">
-      <change beforePath="$PROJECT_DIR$/juanv/dff.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/juanv/Python_JuanV/#Primos_Pares_Impares_Python_JuanV/#Primos_Pares_Impares_JuanV.py" beforeDir="false" afterPath="$PROJECT_DIR$/juanv/Python_JuanV/#Primos_Pares_Impares_Python_JuanV/#Primos_Pares_Impares_JuanV.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +216,23 @@
       <option name="project" value="LOCAL" />
       <updated>1775839852427</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="codigos completos de Python del Primer corte">
+      <option name="closed" value="true" />
+      <created>1775839909293</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1775839909293</updated>
+    </task>
+    <task id="LOCAL-00008" summary="codigos completos de Python del Primer corte">
+      <option name="closed" value="true" />
+      <created>1775840132314</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1775840132314</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
