@@ -1,0 +1,6 @@
+[package]
+name = "Variables_Rust_SharoonJ"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
