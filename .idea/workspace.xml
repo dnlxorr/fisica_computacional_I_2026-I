@@ -3,10 +3,26 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml">
+      <package file="$PROJECT_DIR$/Sebastián_V/Sebas-Rust">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="codigos completos de Python del Primer corte">
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Aprox_Taylor.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Datasets.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Error_redondeo.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Primos_Impares_Pares.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Stack_y_queue.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Variables.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/tiempo.rs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/juanv/Python_JuanV/#Primos_Pares_Impares_Python_JuanV/#Primos_Pares_Impares_JuanV.py" beforeDir="false" afterPath="$PROJECT_DIR$/juanv/Python_JuanV/#Primos_Pares_Impares_Python_JuanV/#Primos_Pares_Impares_JuanV.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/main.rs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="Rust File" />
       </list>
     </option>
   </component>
@@ -41,6 +58,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -56,6 +74,9 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="4yLnWw03" />
   </component>
   <component name="McpProjectServerCommands">
     <commands />
@@ -76,6 +97,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Cargo.Run Sebas-Rust.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Contador.executor": "Run",
     "Python.Contadotr.executor": "Run",
@@ -94,7 +116,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Primer-Corte-Completo-JuanV",
+    "git-widget-placeholder": "develop",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/velas/PycharmProjects/fisica_computacional_I_2026-I/juanv/Python_JuanV",
@@ -103,6 +125,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "settings.editor.selected.configurable": "preferences.sourceCode.Python",
     "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
@@ -113,7 +136,25 @@
       <recent name="C:\Users\velas\PycharmProjects\fisica_computacional_I_2026-I\juanv\Python_JuanV" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Cargo.Run Sebas-Rust">
+    <configuration name="Run Sebas-Rust" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="buildProfileId" value="dev" />
+      <option name="command" value="run --package Sebas-Rust --bin Sebas-Rust" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/Sebastián_V/Sebas-Rust" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dataset_Clima_Barras" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -140,9 +181,12 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Dataset_Clima_Barras" />
+        <item itemvalue="Cargo.Run Sebas-Rust" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
