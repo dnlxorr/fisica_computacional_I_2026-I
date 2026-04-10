@@ -13,7 +13,6 @@ fn main() {
 
     let duracion = inicio.elapsed();
 
-    println!("--------------------------------");
     println!("La suma total es: {}", suma);
     println!("Tiempo de ejecución: {:?}", duracion);
 }
