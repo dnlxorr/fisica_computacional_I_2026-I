@@ -11,19 +11,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="codigos completos de Python del Primer corte">
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Aprox_Taylor.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Datasets.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Error_redondeo.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Primos_Impares_Pares.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Stack_y_queue.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/Variables.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/tiempo.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebas-Rust/src/main.rs" afterDir="false" />
-    </list>
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Añadidura completa" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -276,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775840132314</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Añadidura completa">
+      <option name="closed" value="true" />
+      <created>1775844770635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1775844770635</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -299,7 +295,8 @@
     <MESSAGE value="Contador añadido" />
     <MESSAGE value="stack y Queue añadido" />
     <MESSAGE value="codigos completos de Python del Primer corte" />
-    <option name="LAST_COMMIT_MESSAGE" value="codigos completos de Python del Primer corte" />
+    <MESSAGE value="Añadidura completa" />
+    <option name="LAST_COMMIT_MESSAGE" value="Añadidura completa" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
