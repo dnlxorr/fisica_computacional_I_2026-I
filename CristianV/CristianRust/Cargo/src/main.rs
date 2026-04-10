@@ -4,7 +4,7 @@ mod tiempo_ejecucion;
 mod clima_grafica1;
 mod taylo_aprox;
 mod stack_queue;
-mod Error_Conteo;
+mod error_conteo;
 
 fn main() {
     // print!("Ejecucion de tiempo \n");
@@ -19,6 +19,6 @@ fn main() {
     // taylo_aprox::aprox();
     // print!("Funcion de aproximacion por taylo");
     // stack_queue::st_qu();
-    print!("Error de redondeo");
-    Error_Conteo::errorcon();
+    // print!("Error de redondeo");
+    // Error_Conteo::errorcon();
 }
