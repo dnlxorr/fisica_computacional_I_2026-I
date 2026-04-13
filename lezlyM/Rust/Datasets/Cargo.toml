@@ -1,0 +1,9 @@
+[package]
+name = "datasets"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Usamos la 0.41 para evitar el error de compatibilidad de hashbrown
+polars = { version = "0.41", features = ["lazy", "csv", "temporal", "dtype-full"] }
+plotters = "0.3.5"
