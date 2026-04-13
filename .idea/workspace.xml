@@ -65,6 +65,41 @@
         <feature name="default" enabled="true" />
       </package>
     </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Numeros/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Numeros">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Variables/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Variables">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Tiempo/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Tiempo">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Stack/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Stack">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Graficas/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Graficas">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/Hello/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/Hello">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
+    <cargoProject FILE="$PROJECT_DIR$/juanv/Rust_JuanV/dataset/Cargo.toml">
+      <package file="$PROJECT_DIR$/juanv/Rust_JuanV/dataset">
+        <feature name="default" enabled="true" />
+      </package>
+    </cargoProject>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
@@ -110,12 +145,12 @@
     &quot;assignee&quot;: &quot;Rafael-Lemus&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dnlxorr/fisica_computacional_I_2026-I.git",
-    "accountId": "9f282d3f-c98e-48db-afcb-543e419a8e4b"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dnlxorr/fisica_computacional_I_2026-I.git&quot;,
+    &quot;accountId&quot;: &quot;9f282d3f-c98e-48db-afcb-543e419a8e4b&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
   </component>
@@ -142,10 +177,18 @@
   "keyToString": {
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Graficas.executor": "Run",
+    "Cargo.Run Hello.executor": "Run",
     "Cargo.Run Hello_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Numeros.executor": "Run",
     "Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Stack.executor": "Run",
     "Cargo.Run Stack_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Tiempo.executor": "Run",
     "Cargo.Run Tiempo_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Variables.executor": "Run",
+    "Cargo.Run dataset.executor": "Run",
+    "Cargo.Run taylor_sin.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python.Contador.executor": "Run",
     "Python.Contadotr.executor": "Run",
@@ -160,7 +203,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "44-sharoonj__primercorte__trabajos",
+    "git-widget-placeholder": "Primer-Corte-Completo-Rúst.-JuanV",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -181,10 +224,10 @@
       <recent name="C:\Users\Sharoon\Desktop\Fisica_Computacional_1\SharoonJ\Python_SharoonJ" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ">
-    <configuration name="Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package Grafica_aproximacion_de_Taylor_Rust_SharoonJ --bin Grafica_aproximacion_de_Taylor_Rust_SharoonJ" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Grafica_aproximacion_de_Taylor_Rust_SharoonJ" />
+  <component name="RunManager" selected="Cargo.Run dataset">
+    <configuration name="Run Graficas" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package Graficas --bin Graficas" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/Graficas" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -199,9 +242,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run Hello_Rust_SharoonJ" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package Hello_Rust_SharoonJ --bin Hello_Rust_SharoonJ" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Hello_Rust_SharoonJ" />
+    <configuration name="Run Numeros" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package Numeros --bin Numeros" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/Numeros" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -216,10 +259,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run Numeros_Primos_Impares_Pares_Rust_SharoonJ" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="buildProfileId" value="dev" />
-      <option name="command" value="run --package Numeros_Primos_Impares_Pares_Rust_SharoonJ --bin Numeros_Primos_Impares_Pares_Rust_SharoonJ" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Numeros_Primos_Impares_Pares_Rust_SharoonJ" />
+    <configuration name="Run Stack" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package Stack --bin Stack" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/Stack" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -234,9 +276,9 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run Stack_Rust_SharoonJ" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package Stack_Rust_SharoonJ --bin Stack_Rust_SharoonJ" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Stack_Rust_SharoonJ" />
+    <configuration name="Run dataset" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package dataset --bin dataset" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/dataset" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -251,9 +293,26 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Run Tiempo_Rust_SharoonJ" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
-      <option name="command" value="run --package Tiempo_Rust_SharoonJ --bin Tiempo_Rust_SharoonJ" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Tiempo_Rust_SharoonJ" />
+    <configuration name="Run taylor_sin" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
+      <option name="command" value="run --package taylor_sin --bin taylor_sin" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/Graficas" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ" />
       <envs />
       <option name="emulateTerminal" value="true" />
       <option name="channel" value="DEFAULT" />
@@ -292,13 +351,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Cargo.Run Graficas" />
+      <item itemvalue="Cargo.Run Numeros" />
+      <item itemvalue="Cargo.Run Stack" />
+      <item itemvalue="Cargo.Run dataset" />
+      <item itemvalue="Cargo.Run taylor_sin" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ" />
-        <item itemvalue="Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ" />
-        <item itemvalue="Cargo.Run Stack_Rust_SharoonJ" />
-        <item itemvalue="Cargo.Run Tiempo_Rust_SharoonJ" />
-        <item itemvalue="Cargo.Run Hello_Rust_SharoonJ" />
+        <item itemvalue="Cargo.Run dataset" />
+        <item itemvalue="Cargo.Run taylor_sin" />
+        <item itemvalue="Cargo.Run Graficas" />
+        <item itemvalue="Cargo.Run Numeros" />
+        <item itemvalue="Cargo.Run Stack" />
       </list>
     </recent_temporary>
   </component>
