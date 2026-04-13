@@ -67,7 +67,7 @@
     </cargoProject>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Compilacion de los codigos del primer corte Lezly Martinez Rubiano">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -387,7 +387,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775537374479</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Compilacion de los codigos del primer corte Lezly Martinez Rubiano">
+      <option name="closed" value="true" />
+      <created>1776100850332</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1776100850332</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -414,7 +422,8 @@
     <MESSAGE value="stack y Queue añadido" />
     <MESSAGE value="Trabajos de Python completos y funcionales – Sharoon Yuliet Jaimes Contreras" />
     <MESSAGE value="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
+    <MESSAGE value="Compilacion de los codigos del primer corte Lezly Martinez Rubiano" />
+    <option name="LAST_COMMIT_MESSAGE" value="Compilacion de los codigos del primer corte Lezly Martinez Rubiano" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
