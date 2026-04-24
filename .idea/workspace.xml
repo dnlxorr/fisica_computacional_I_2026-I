@@ -232,7 +232,7 @@
       <recent name="C:\Users\Sharoon\Desktop\Fisica_Computacional_1\SharoonJ\Python_SharoonJ" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.Contador">
     <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
       <option name="command" value="run" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ" />
@@ -348,7 +348,6 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
-      <option name="DEBUG_JUST_MY_CODE" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rafael_Lemus/Python/Contador.py" />
