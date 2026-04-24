@@ -14,6 +14,22 @@ def funAprox1 (x):
 def funAprox2 (x):
     return x - (x**3)/m.factorial(3) + (x**5)/m.factorial(5) - (x**7)/m.factorial(7) + (x**9)/m.factorial(9) - (x**11)/m.factorial(11)
 
+taylor = []
+def funerrrormin(x):
+    error = 1E8
+    taylorall= 0
+    for i in range (10):
+        f = taylor.pos(i) * x**i
+        taylorall += f
+        ecm = np.mean((funOrg(x) - taylorall)**2)
+
+        if ecm < error:
+            break
+
+        return taylorall;
+
+
+
 def ECM1(x):
     ecm1 = np.mean((funOrg(x) - funAprox1(x))**2)
     return ecm1
@@ -22,11 +38,11 @@ def ECM2(x):
     ecm2 = np.mean((funOrg(x) - funAprox2(x))**2)
     return ecm2
 
-x = np.linspace(-3,3 ,500)
+x = np.linspace(-100,100,500)
 plt.plot(x,funOrg(x), label="Org", linestyle="--", linewidth=3)
 plt.plot(x,funAprox1(x), label="Aprox1")
 plt.plot(x,funAprox2(x), label="Aprox2")
-
+plt.ylim(-2,2)
 plt.legend(['Org','Aprox1','Aprox2'])
 plt.grid(True)
 plt.title(f"Grafico de Taylor de x \n  ECM Orden 3: {ECM1(x):.5f} | ECM Orden 6: {ECM2(x):.5f} ")

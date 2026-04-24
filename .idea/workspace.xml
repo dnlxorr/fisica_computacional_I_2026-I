@@ -103,14 +103,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
+      <change afterPath="$PROJECT_DIR$/CristianV/PythonCorte2/IntegracionDelMovimiento.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fisica_computacional_I_2026-I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fisica_computacional_I_2026-I.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CristianV/CristianPython/Grafica_Aproximacion_Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/Grafica_Aproximacion_Taylor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="RsBuildProfile:dev" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -173,50 +175,56 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ.executor": "Run",
-    "Cargo.Run Graficas.executor": "Run",
-    "Cargo.Run Hello.executor": "Run",
-    "Cargo.Run Hello_Rust_SharoonJ.executor": "Run",
-    "Cargo.Run Numeros.executor": "Run",
-    "Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ.executor": "Run",
-    "Cargo.Run Stack.executor": "Run",
-    "Cargo.Run Stack_Rust_SharoonJ.executor": "Run",
-    "Cargo.Run Tiempo.executor": "Run",
-    "Cargo.Run Tiempo_Rust_SharoonJ.executor": "Run",
-    "Cargo.Run Variables.executor": "Run",
-    "Cargo.Run dataset.executor": "Run",
-    "Cargo.Run taylor_sin.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.Contador.executor": "Run",
-    "Python.Contadotr.executor": "Run",
-    "Python.hello world.executor": "Run",
-    "Python.stack y Queue.executor": "Run",
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.rust.reset.selective.auto.import": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ai.playground.ignore.import.keys.banner.in.settings": "true",
-    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Primer-Corte-Completo-Rúst.-JuanV",
-    "ignore.virus.scanning.warn.message": "true",
-    "junie.onboarding.icon.badge.shown": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
-    "settings.editor.selected.configurable": "Errors",
-    "to.speed.mode.migration.done": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Graficas.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Hello.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Hello_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Numeros.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Stack.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Stack_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Tiempo.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Tiempo_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run Variables.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run dataset.executor&quot;: &quot;Run&quot;,
+    &quot;Cargo.Run taylor_sin.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.Contador.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Contadotr.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Database_Scattering.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Datasets_Prueba.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Grafica_Aproximacion_Taylor.executor&quot;: &quot;Run&quot;,
+    &quot;Python.IntegracionDelMovimiento.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Stack_Queue.executor&quot;: &quot;Run&quot;,
+    &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
+    &quot;Python.stack y Queue.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;develop&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sharoon\RustroverProjects\fisica_computacional_I_2026-I\SharoonJ\Rust_SharoonJ" />
@@ -224,7 +232,24 @@
       <recent name="C:\Users\Sharoon\Desktop\Fisica_Computacional_1\SharoonJ\Python_SharoonJ" />
     </key>
   </component>
-  <component name="RunManager" selected="Cargo.Run dataset">
+  <component name="RunManager">
+    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
+      <option name="command" value="run" />
+      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ" />
+      <envs />
+      <option name="emulateTerminal" value="true" />
+      <option name="channel" value="DEFAULT" />
+      <option name="requiredFeatures" value="true" />
+      <option name="allFeatures" value="false" />
+      <option name="withSudo" value="false" />
+      <option name="buildTarget" value="REMOTE" />
+      <option name="backtrace" value="SHORT" />
+      <option name="isRedirectInput" value="false" />
+      <option name="redirectInputPath" value="" />
+      <method v="2">
+        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Run Graficas" type="CargoCommandRunConfiguration" factoryName="Cargo Command" temporary="true">
       <option name="command" value="run --package Graficas --bin Graficas" />
       <option name="workingDirectory" value="file://$PROJECT_DIR$/juanv/Rust_JuanV/Graficas" />
@@ -310,22 +335,30 @@
         <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CargoCommandRunConfiguration" factoryName="Cargo Command">
-      <option name="command" value="run" />
-      <option name="workingDirectory" value="file://$PROJECT_DIR$/SharoonJ/Rust_SharoonJ/Variables_Rust_SharoonJ" />
-      <envs />
-      <option name="emulateTerminal" value="true" />
-      <option name="channel" value="DEFAULT" />
-      <option name="requiredFeatures" value="true" />
-      <option name="allFeatures" value="false" />
-      <option name="withSudo" value="false" />
-      <option name="buildTarget" value="REMOTE" />
-      <option name="backtrace" value="SHORT" />
-      <option name="isRedirectInput" value="false" />
-      <option name="redirectInputPath" value="" />
-      <method v="2">
-        <option name="CARGO.BUILD_TASK_PROVIDER" enabled="true" />
-      </method>
+    <configuration name="Contador" type="PythonConfigurationType" factoryName="Python" activateToolWindowBeforeRun="false" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Rafael_Lemus/Python" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="false" />
+      <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rafael_Lemus/Python/Contador.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="Contador" type="PythonConfigurationType" factoryName="Python" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <module name="fisica_computacional_I_2026-I" />
@@ -340,6 +373,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rafael_Lemus/Python/Contador.py" />
@@ -352,21 +386,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Cargo.Run Graficas" />
-      <item itemvalue="Cargo.Run Numeros" />
-      <item itemvalue="Cargo.Run Stack" />
-      <item itemvalue="Cargo.Run dataset" />
-      <item itemvalue="Cargo.Run taylor_sin" />
+      <item itemvalue="Python.Contador" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Cargo.Run dataset" />
-        <item itemvalue="Cargo.Run taylor_sin" />
-        <item itemvalue="Cargo.Run Graficas" />
-        <item itemvalue="Cargo.Run Numeros" />
-        <item itemvalue="Cargo.Run Stack" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="RustProjectSettings">
     <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
@@ -374,8 +395,7 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.31033.139" />
-        <option value="bundled-python-sdk-2653e85de345-6d6dccd035ac-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.31033.139" />
+        <option value="bundled-python-sdk-b63d5a1f7c97-b61e75351b1f-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.22158.340" />
       </set>
     </attachedChunks>
   </component>
@@ -395,6 +415,9 @@
       <workItem from="1773615035666" duration="55000" />
       <workItem from="1773975720596" duration="1516000" />
       <workItem from="1774635601416" duration="357000" />
+      <workItem from="1777054807211" duration="46000" />
+      <workItem from="1777057492879" duration="3751000" />
+      <workItem from="1777061269044" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="hola">
       <option name="closed" value="true" />
@@ -490,8 +513,13 @@
     <option name="LAST_COMMIT_MESSAGE" value="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
-    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$stack_y_Queue.coverage" NAME="stack y Queue Coverage Results" MODIFIED="1773977148616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$hello_world.coverage" NAME="hello world Coverage Results" MODIFIED="1772827649867" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Datasets_Prueba.coverage" NAME="Datasets_Prueba Coverage Results" MODIFIED="1776091722191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CristianV/CristianPython" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Grafica_Aproximacion_Taylor.coverage" NAME="Grafica_Aproximacion_Taylor Coverage Results" MODIFIED="1776098436382" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CristianV/CristianPython" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$IntegracionDelMovimiento.coverage" NAME="IntegracionDelMovimiento Coverage Results" MODIFIED="1777062707800" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CristianV/PythonCorte2" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Stack_Queue.coverage" NAME="Stack_Queue Coverage Results" MODIFIED="1776091003151" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CristianV/CristianPython" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Database_Scattering.coverage" NAME="Database_Scattering Coverage Results" MODIFIED="1776089246596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CristianV/CristianPython" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1777061274288" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
+    <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$stack_y_Queue.coverage" NAME="stack y Queue Coverage Results" MODIFIED="1773977148616" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
   </component>
 </project>
