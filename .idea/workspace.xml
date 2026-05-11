@@ -103,10 +103,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
-      <change afterPath="$PROJECT_DIR$/CristianV/PythonCorte2/IntegracionDelMovimiento.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fisica_computacional_I_2026-I.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fisica_computacional_I_2026-I.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/CristianPython/Grafica_Aproximacion_Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/Grafica_Aproximacion_Taylor.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Datasets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Cuadratura de Gauss.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Cuadratura-de-Gauss-Integracion-Numerica-de-Alta-Precision.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Ejercicio Aproximación integral.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Extrapolacion-de-Richardson-en-fisica-computacional.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Extrapolación de Richardson.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Romberg_Integracion_Numerica.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/Series de Talor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Aproximacion_Taylor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sebastián_V/Sebastian_Python/Aproximacion_Taylor.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
