@@ -68,15 +68,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Trabajos en Rust codigos completos Sharoon Yuliet Jaimes Contreras">
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/ Romberg_SharoonJ/Integración_Romberg.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Calor_Barra_SharoonJ/Trasferencia_Calor.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Errores_SharoonJ/Errores_de_Integracion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Gauss_SharoonJ/Cuadratura_Gauss.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Integrales_Multiples_SharoonJ/Integrales_Multiples.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Intervalos_Infiniitos_SharoonJ/Integrales_Intervalos_Infinitos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Seleccion_Paso_SharoonJ/Selección_Número_Pasos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Simpson_SharoonJ/Regla_Simpson.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Trapecio_SharoonJ/Regla_Trapecio.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -111,6 +102,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -118,12 +110,12 @@
     &quot;assignee&quot;: &quot;Rafael-Lemus&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dnlxorr/fisica_computacional_I_2026-I.git",
-    "accountId": "6811cf63-59d0-4c37-85fd-de578c9efaec"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dnlxorr/fisica_computacional_I_2026-I.git&quot;,
+    &quot;accountId&quot;: &quot;6811cf63-59d0-4c37-85fd-de578c9efaec&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
   </component>
@@ -149,52 +141,52 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run Hello_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run Stack_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
-    &quot;Cargo.Run Tiempo_Rust_SharoonJ.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.Contador.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Contadotr.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Cuadratura_Gauss.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Errores_de_Integracion.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Integración_Romberg.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Integrales_Intervalos_Infinitos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Integrales_Multiples.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Regla_Simpson.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Regla_Trapecio.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Selección_Número_Pasos.executor&quot;: &quot;Run&quot;,
-    &quot;Python.Trasferencia_Calor.executor&quot;: &quot;Run&quot;,
-    &quot;Python.hello world.executor&quot;: &quot;Run&quot;,
-    &quot;Python.stack y Queue.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.rust.reset.selective.auto.import&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ai.playground.ignore.import.keys.banner.in.settings&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;codigos__segundo__corte&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/lezly/RustroverProjects/fisica_computacional_I_2026-I/lezlyM/Python/Segundo corte&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;org.rust.cargo.project.model.PROJECT_DISCOVERY&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Cargo.Run Grafica_aproximacion_de_Taylor_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Hello_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Numeros_Primos_Impares_Pares_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Stack_Rust_SharoonJ.executor": "Run",
+    "Cargo.Run Tiempo_Rust_SharoonJ.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.Contador.executor": "Run",
+    "Python.Contadotr.executor": "Run",
+    "Python.Cuadratura_Gauss.executor": "Run",
+    "Python.Errores_de_Integracion.executor": "Run",
+    "Python.Integración_Romberg.executor": "Run",
+    "Python.Integrales_Intervalos_Infinitos.executor": "Run",
+    "Python.Integrales_Multiples.executor": "Run",
+    "Python.Regla_Simpson.executor": "Run",
+    "Python.Regla_Trapecio.executor": "Run",
+    "Python.Selección_Número_Pasos.executor": "Run",
+    "Python.Trasferencia_Calor.executor": "Run",
+    "Python.hello world.executor": "Run",
+    "Python.stack y Queue.executor": "Run",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.rust.reset.selective.auto.import": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ai.playground.ignore.import.keys.banner.in.settings": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "Codigos-Cristian",
+    "ignore.virus.scanning.warn.message": "true",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "C:/Users/lezly/RustroverProjects/fisica_computacional_I_2026-I/lezlyM/Python/Segundo corte",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
+    "settings.editor.selected.configurable": "Errors",
+    "to.speed.mode.migration.done": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lezly\RustroverProjects\fisica_computacional_I_2026-I\lezlyM\Python\Segundo corte" />
@@ -205,7 +197,127 @@
       <recent name="C:\Users\Sharoon\Desktop\Fisica_Computacional_1\SharoonJ\Python_SharoonJ" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.Integrales_Intervalos_Infinitos">
+  <component name="RunManager" selected="Python.05_integrales_especiales">
+    <configuration name="01_errores_numericos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/PythonCorte2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/PythonCorte2/01_errores_numericos.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="02_trapecio_simpson" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/PythonCorte2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/PythonCorte2/02_trapecio_simpson.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="03_romberg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/PythonCorte2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/PythonCorte2/03_romberg.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="04_gauss" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/PythonCorte2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/PythonCorte2/04_gauss.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="05_integrales_especiales" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/PythonCorte2" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/PythonCorte2/05_integrales_especiales.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="Contador" type="PythonConfigurationType" factoryName="Python" activateToolWindowBeforeRun="false" nameIsGenerated="true">
       <module name="fisica_computacional_I_2026-I" />
       <option name="ENV_FILES" value="" />
@@ -219,6 +331,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="false" />
       <option name="ADD_SOURCE_ROOTS" value="false" />
+      <option name="DEBUG_JUST_MY_CODE" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Rafael_Lemus/Python/Contador.py" />
@@ -230,136 +343,21 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Errores_de_Integracion" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Errores_SharoonJ" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Errores_SharoonJ/Errores_de_Integracion.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Integración_Romberg" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/ Romberg_SharoonJ" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/ Romberg_SharoonJ/Integración_Romberg.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Integrales_Intervalos_Infinitos" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Intervalos_Infiniitos_SharoonJ" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Intervalos_Infiniitos_SharoonJ/Integrales_Intervalos_Infinitos.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Integrales_Multiples" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Integrales_Multiples_SharoonJ" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Integrales_Multiples_SharoonJ/Integrales_Multiples.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Trasferencia_Calor" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Calor_Barra_SharoonJ" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Codigos_SegundoCorte_SharoonJ/Calor_Barra_SharoonJ/Trasferencia_Calor.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.Contador" />
-      <item itemvalue="Python.Errores_de_Integracion" />
-      <item itemvalue="Python.Integración_Romberg" />
-      <item itemvalue="Python.Integrales_Intervalos_Infinitos" />
-      <item itemvalue="Python.Integrales_Multiples" />
-      <item itemvalue="Python.Trasferencia_Calor" />
+      <item itemvalue="Python.01_errores_numericos" />
+      <item itemvalue="Python.02_trapecio_simpson" />
+      <item itemvalue="Python.03_romberg" />
+      <item itemvalue="Python.04_gauss" />
+      <item itemvalue="Python.05_integrales_especiales" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Integrales_Intervalos_Infinitos" />
-        <item itemvalue="Python.Errores_de_Integracion" />
-        <item itemvalue="Python.Trasferencia_Calor" />
-        <item itemvalue="Python.Integración_Romberg" />
-        <item itemvalue="Python.Integrales_Multiples" />
+        <item itemvalue="Python.05_integrales_especiales" />
+        <item itemvalue="Python.04_gauss" />
+        <item itemvalue="Python.03_romberg" />
+        <item itemvalue="Python.02_trapecio_simpson" />
+        <item itemvalue="Python.01_errores_numericos" />
       </list>
     </recent_temporary>
   </component>
