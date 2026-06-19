@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="stack y Queue añadido">
-      <change afterPath="$PROJECT_DIR$/CristianV/Corte 3/Proyecto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="Ariculo y codigo del 3 corte">
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/3 Corte/Derivación numérica de segundas derivadas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/3 Corte/Diferencias centrales.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/3 Corte/Diferencias finitas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sebastián_V/3 Corte/Errores en la derivación numérica.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CristianV/CristianPython/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +43,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -49,12 +51,12 @@
     &quot;assignee&quot;: &quot;Rafael-Lemus&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dnlxorr/fisica_computacional_I_2026-I.git",
-    "accountId": "a850202f-e134-4930-9b2a-4c93aae33a40"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dnlxorr/fisica_computacional_I_2026-I.git&quot;,
+    &quot;accountId&quot;: &quot;a35856e9-92f3-4260-891a-01a3837e003d&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
   </component>
@@ -85,12 +87,13 @@
     "Python.Contador.executor": "Run",
     "Python.Contadotr.executor": "Run",
     "Python.Current File.executor": "Run",
+    "Python.Código órbita de Marte (1).executor": "Run",
+    "Python.Código órbita de Marte.executor": "Run",
     "Python.Dataset_Clima_Barras.executor": "Run",
     "Python.Datasets_clima_SebastianV.executor": "Run",
     "Python.Error_Redondeo (2).executor": "Run",
     "Python.Error_Redondeo.executor": "Run",
     "Python.hello world.executor": "Run",
-    "Python.proyecto.executor": "Run",
     "Python.stack y Queue.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -100,7 +103,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "97-tercer-corte-cristian-vargas",
+    "git-widget-placeholder": "100-tercer-corte-sebastian-vargas",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -113,7 +116,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Codigos del corte">
+  <component name="RunManager" selected="Python.Código órbita de Marte (1)">
     <configuration name="Caso3_Proyecto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fisica_computacional_I_2026-I" />
       <option name="ENV_FILES" value="" />
@@ -137,7 +140,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Codigos del corte" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="Código órbita de Marte (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fisica_computacional_I_2026-I" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,12 +149,35 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/Corte 3" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sebastián_V/3 Corte" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/Corte 3/Codigos del corte.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sebastián_V/3 Corte/Código órbita de Marte.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Código órbita de Marte" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sebastián_V/Articulo  3 corte" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sebastián_V/Articulo  3 corte/Código órbita de Marte.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -184,40 +210,16 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proyecto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="fisica_computacional_I_2026-I" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/Corte 3" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="RUN_TOOL" value="" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/Corte 3/proyecto.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <list>
-      <item itemvalue="Python.Grafica_Aproximacion_Taylor" />
-      <item itemvalue="Python.Codigos del corte" />
-      <item itemvalue="Python.proyecto" />
+      <item itemvalue="Python.Código órbita de Marte (1)" />
+      <item itemvalue="Python.Código órbita de Marte" />
       <item itemvalue="Python.Caso3_Proyecto" />
       <item itemvalue="Python.Dataset_Clima_Barras" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.Codigos del corte" />
-        <item itemvalue="Python.proyecto" />
+        <item itemvalue="Python.Código órbita de Marte (1)" />
+        <item itemvalue="Python.Código órbita de Marte" />
         <item itemvalue="Python.Caso3_Proyecto" />
         <item itemvalue="Python.Dataset_Clima_Barras" />
       </list>
@@ -287,7 +289,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773977214524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Ariculo y codigo del 3 corte">
+      <option name="closed" value="true" />
+      <created>1781897327932</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1781897327932</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -309,7 +319,8 @@
     <MESSAGE value="Timer que cuenta el tiempo que tarda el programa en sumar los numeros de 1 a 100" />
     <MESSAGE value="Contador añadido" />
     <MESSAGE value="stack y Queue añadido" />
-    <option name="LAST_COMMIT_MESSAGE" value="stack y Queue añadido" />
+    <MESSAGE value="Ariculo y codigo del 3 corte" />
+    <option name="LAST_COMMIT_MESSAGE" value="Ariculo y codigo del 3 corte" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/fisica_computacional_I_2026_I$Contador.coverage" NAME="Contador Coverage Results" MODIFIED="1773611936489" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Rafael_Lemus/Python" />
