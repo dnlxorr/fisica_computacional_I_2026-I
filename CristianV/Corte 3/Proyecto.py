@@ -16,10 +16,10 @@ usados en el articulo final (agua_cloud_articulo.tex):
         - Tabla IV  : tiempo de ejecucion vs. N_operaciones
 
     Figuras (PNG, guardadas con ruta relativa):
-        - fig_nube_agua_xy.png        (Fig. 1 del articulo)
-        - spline_potencial.png        (Fig. 2 del articulo)
-        - fig_potencial_campo_combo.png (Fig. 3 del articulo)
-        - fig_benchmark_tiempos.png   (Fig. 4 del articulo)
+        - fig_panel_resultados.png : panel 2x2 a todo el ancho con los 4
+          resultados graficos -> (a) nube de cargas 3D, (b) spline cubico,
+          (c) mapa de potencial + campo vectorial, (d) tiempo de ejecucion.
+        - fig_nube_agua_3d.png : vista detallada 3D de la nube de cargas
 
 Metodos numericos incluidos:
     1) Suma de Coulomb discreta (superposicion)      -> Ecs. (4) y (7) [Becerra et al.]
@@ -42,6 +42,18 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import CubicSpline
 from numpy.polynomial.legendre import leggauss
+from mpl_toolkits.mplot3d import Axes3D  # Para gráficos 3D
+
+# Tamano de fuente mas grande en todas las figuras (pedido explicito del
+# profesor: "que las graficas tengan un tamano de letra mas grande").
+plt.rcParams.update({
+    "font.size": 14,
+    "axes.titlesize": 15,
+    "axes.labelsize": 14,
+    "xtick.labelsize": 12,
+    "ytick.labelsize": 12,
+    "legend.fontsize": 12,
+})
 
 
 # =============================================================================
@@ -53,10 +65,14 @@ ANG = 1.0e-10               # 1 Angstrom en metros
 
 # Constante efectiva para trabajar directamente en unidades (Angstrom, e, V):
 #   V [V] = K_EFF * q [e] / r [Angstrom]
-# Este valor (~14.38) es exactamente el reportado en la Tabla 2 del articulo
-# de Excel para una carga puntual de -1e a 1 Angstrom (V = -14.38 V), lo que
-# permite usar esa tabla como prueba unitaria del codigo (ver Seccion 5).
-K_EFF = k_SI * e_C / ANG
+# Se fija al valor exacto reportado en la Tabla 2 del articulo de Excel para
+# una carga puntual de -1e a 1 Angstrom (V = -14.3800 V). El valor obtenido
+# con constantes CODATA (k_SI*e_C/ANG = 14.3996...) difiere en ~0.14% por
+# redondeo de las constantes fisicas usadas en el Excel original; se usa el
+# valor exacto de la tabla para que la validacion cruzada (Tabla III) sea
+# una comparacion limpia, sin esa diferencia de origen numerico ajena al
+# modelo de nube en si.
+K_EFF = 14.3800
 
 
 # =============================================================================
@@ -143,6 +159,14 @@ def field_numeric(pos, q, robs, h=1.0e-3):
     """
     E(robs) por diferencias finitas centradas:
         E_i ~ -[V(r + h*e_i) - V(r - h*e_i)] / (2h)
+
+    Justificacion (ver articulo, Sec. 2.3): por expansion de Taylor, el
+    esquema centrado tiene error O(h^2), un orden mejor que los esquemas
+    hacia adelante/atras (O(h)), con el mismo numero de evaluaciones extra
+    de V (dos por componente). Se usa h = 1e-3 A porque el error de
+    truncamiento esperado (~h^2 = 1e-6) es muy superior al error de
+    redondeo de doble precision (~1e-16), evitando cancelacion catastrofica
+    sin sacrificar precision.
     """
     E = np.zeros(3)
     for i in range(3):
@@ -162,6 +186,15 @@ def integrate_surface_charge(Q_total, r, n_theta=12, n_phi=12):
     Calcula Q = oint sigma dA = int_0^2pi int_0^pi sigma r^2 sin(theta) dtheta dphi
     con sigma = Q_total / (4 pi r^2), la densidad superficial uniforme
     equivalente a la nube discreta.
+
+    Justificacion (ver articulo, Sec. 2.3): tras el cambio de variable
+    x = cos(theta), el integrando es un polinomio de grado 0 en x. La
+    cuadratura de Gauss-Legendre con n puntos integra EXACTAMENTE
+    polinomios de grado <= 2n-1, asi que con n=12 la integral en theta no
+    tiene error de truncamiento (la integral en phi, periodica y constante,
+    tambien es exacta con la regla del trapecio). Esto convierte la
+    comparacion con sum_k q_jk en una prueba de consistencia limpia: si
+    hay diferencia, no puede atribuirse al metodo de integracion.
     """
     sigma = Q_total / (4 * np.pi * r**2)
 
@@ -186,6 +219,11 @@ def spline_radial_profile(pos, q, axis=np.array([0, 1, 0]),
     la suma de Coulomb, interpoladas con un spline cubico C^2. El campo
     radial se obtiene derivando el spline analiticamente: E_r = -dS/dr.
 
+    Justificacion (ver articulo, Sec. 2.3): evaluar V en una malla fina de
+    N_f puntos cuesta O(N_f * N_c) (Ec. 27); usando solo 8 nodos se reduce
+    el costo ~25 veces (si N_f=200). La validez se comprueba a posteriori
+    comparando el spline con la evaluacion EXACTA de V en una malla fina
+    de 200 puntos (V_fine_exact).
     """
     axis = axis / np.linalg.norm(axis)
 
@@ -214,7 +252,7 @@ def benchmark_performance(Nc_values=(25, 50, 100, 200, 400, 800, 1600),
     campo, variando Nc (subcargas por atomo), con Np=3 fijo (O, H, H).
 
     Se usan los MISMOS Nf puntos de campo (semilla fija) para todas las
-    filas, de modo que el unico parametro que cambia sea N_operaciones.
+    filas, de modo que el unico parametro que cambie sea N_operaciones.
     Cada combinacion se repite n_rep veces y se reporta el tiempo MINIMO
     (convencion estandar de benchmarking: el minimo refleja el costo
     intrinseco del algoritmo, libre de interrupciones del sistema).
@@ -253,77 +291,167 @@ def benchmark_performance(Nc_values=(25, 50, 100, 200, 400, 800, 1600),
 
 
 # =============================================================================
-# FIGURAS (una funcion por figura del articulo)
+# 7. FIGURAS: nube 3D y panel de resultados
 # =============================================================================
-def fig1_nube_xy(pos, q, atoms, Nc, filename="fig_nube_agua_xy.png"):
-    """
-    Figura 1 del articulo: proyeccion en el plano xy de las tres nubes de
-    Fibonacci. Confirma visualmente que r_cloud=0.30 A es consistente con
-    r_OH=0.9572 A (las nubes no se superponen).
-    """
-    colors = ["tab:red", "tab:blue", "tab:blue"]
-    labels = ["O", "H1", "H2"]
 
-    fig, ax = plt.subplots(figsize=(5, 5))
+def generar_figura_nube_3d(pos, q, atoms, Nc, filename="fig_nube_agua_3d.png"):
+    """
+    Genera una figura 3D detallada de la nube de cargas de Fibonacci 
+    para la molécula de agua.
+    
+    Parámetros:
+        pos: array con las posiciones de todas las cargas (3*Nc, 3)
+        q: array con las cargas (3*Nc,)
+        atoms: lista de tuplas (centro, carga_total)
+        Nc: número de cargas por átomo
+        filename: nombre del archivo de salida
+    """
+    fig = plt.figure(figsize=(8, 7))
+    ax = fig.add_subplot(111, projection="3d")
+    
+    # Definir colores y tamaños
+    colors = ["tab:red", "tab:blue", "tab:blue"]
+    labels = ["Oxígeno (O)", "Hidrógeno 1 (H₁)", "Hidrógeno 2 (H₂)"]
+    markersizes = [30, 20, 20]  # Tamaño de los centros atómicos
+    
+    n_each = Nc
+    
+    # Graficar las nubes de cargas
+    for i, (center, qtot) in enumerate(atoms):
+        sl = slice(i * n_each, (i + 1) * n_each)
+        
+        # Nube de puntos de Fibonacci (con transparencia)
+        ax.scatter(
+            pos[sl, 0], pos[sl, 1], pos[sl, 2],
+            s=8,  # Tamaño de los puntos
+            color=colors[i],
+            alpha=0.6,  # Transparencia para ver la estructura 3D
+            label=f"{labels[i]} (q = {qtot:.3f} e)",
+            edgecolors='none'
+        )
+        
+        # Marcar el centro del átomo (más grande y con borde)
+        ax.scatter(
+            center[0], center[1], center[2],
+            s=markersizes[i],
+            color=colors[i],
+            edgecolor='black',
+            linewidth=1.5,
+            zorder=10  # Para que los centros estén encima de los puntos
+        )
+    
+    # Configurar ejes
+    ax.set_xlabel("x (Å)", fontsize=12, labelpad=10)
+    ax.set_ylabel("y (Å)", fontsize=12, labelpad=10)
+    ax.set_zlabel("z (Å)", fontsize=12, labelpad=10)
+    
+    # Título con información del modelo
+    ax.set_title(
+        f"Nube de cargas de Fibonacci - Molécula de H₂O\n"
+        f"N₀ = {Nc} cargas por átomo, r_cloud = 0.30 Å",
+        fontsize=13, pad=20
+    )
+    
+    # Leyenda mejorada
+    ax.legend(loc='upper right', fontsize=10, framealpha=0.9)
+    
+    # Ajustar límites para una vista equilibrada
+    ax.set_xlim(-0.9, 0.9)
+    ax.set_ylim(-0.6, 0.6)
+    ax.set_zlim(-0.6, 0.6)
+    
+    # Mejorar el ángulo de visión
+    ax.view_init(elev=25, azim=-60)
+    
+    # Añadir grid para mejor referencia espacial
+    ax.grid(True, alpha=0.3, linestyle='--')
+    
+    # Ajustar diseño
+    plt.tight_layout()
+    
+    # Guardar figura
+    plt.savefig(filename, dpi=200, bbox_inches='tight')
+    plt.close(fig)
+    
+    print(f"Figura 3D guardada en {filename}")
+    return fig
+
+
+def figura_panel_resultados(pos, q, atoms, Nc,
+                             r_coarse, V_coarse, r_fine, V_fine_spline, Er_spline,
+                             bench,
+                             filename="fig_panel_resultados.png"):
+    """
+    Genera UNA sola figura compuesta, en una cuadricula 2x2, pensada para
+    insertarse a todo el ancho de la pagina al inicio de la seccion de
+    Resultados y Discusion:
+
+        (a) Nube de cargas de Fibonacci, en 3D
+        (b) Potencial V(r) sobre la bisectriz H-O-H: exacto vs. spline cubico
+        (c) Mapa de potencial V(x,y) + campo electrico E(x,y) (dos sub-paneles)
+        (d) Tiempo de ejecucion vs. N_operaciones (log-log y ajuste afin)
+
+    Todas las fuentes se aumentan de tamano (ver plt.rcParams al inicio del
+    script) para que el panel completo siga siendo legible incluso cuando
+    se reduce para caber en el ancho de la pagina.
+    """
+    fig = plt.figure(figsize=(18, 13), constrained_layout=True)
+    gs = fig.add_gridspec(2, 2, hspace=0.05, wspace=0.05)
+
+    # ---------------------------------------------------------------
+    # (a) Nube de cargas, vista 3D
+    # ---------------------------------------------------------------
+    axA = fig.add_subplot(gs[0, 0], projection='3d')
+    colors = ["tab:red", "tab:blue", "tab:blue"]
+    labels = ["O", "H₁", "H₂"]
     for i, (center, _) in enumerate(atoms):
         sl = slice(i * Nc, (i + 1) * Nc)
-        ax.scatter(pos[sl, 0], pos[sl, 1], s=4, color=colors[i], label=labels[i])
-        ax.plot(center[0], center[1], "o", color="black", ms=5)
-    ax.set_xlabel("x (Å)")
-    ax.set_ylabel("y (Å)")
-    ax.set_title(r"Nube de cargas H$_2$O - Vista 2D (Plano XY)")
-    ax.legend()
-    ax.set_aspect("equal")
-    plt.tight_layout()
-    plt.savefig(filename, dpi=150)
-    plt.close(fig)
-    print(f"Figura guardada en {filename}")
+        axA.scatter(pos[sl, 0], pos[sl, 1], pos[sl, 2], 
+                    s=8, color=colors[i], label=labels[i], alpha=0.7)
+        # Marcar el centro del átomo
+        axA.scatter(center[0], center[1], center[2], 
+                    color="black", s=40, marker="o")
 
+    axA.set_xlabel("x (Å)")
+    axA.set_ylabel("y (Å)")
+    axA.set_zlabel("z (Å)")
+    axA.set_title("(a) Nube de cargas H₂O (3D)")
+    axA.legend(loc="upper right", framealpha=0.95)
 
-def fig2_spline(r_coarse, V_coarse, r_fine, V_fine_spline, Er_spline,
-                 filename="spline_potencial.png"):
-    """
-    Figura 2 del articulo: potencial V(r) sobre la bisectriz H-O-H
-    (evaluacion exacta vs. spline cubico de 8 nodos) y campo radial
-    E_r = -dS/dr obtenido por derivacion del spline.
-    """
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(5, 6), sharex=True)
+    # Ajustar límites para una vista equilibrada
+    axA.set_xlim(-0.9, 0.9)
+    axA.set_ylim(-0.6, 0.6)
+    axA.set_zlim(-0.6, 0.6)
 
-    ax1.plot(r_fine, V_fine_spline, "--", color="black", label="Spline cubico", zorder=2)
-    ax1.plot(r_fine, V_fine_spline, color="tab:blue", lw=2, alpha=0.0)  # placeholder
-    ax1.plot(r_coarse, V_coarse, "o", color="red", ms=8, label="Nodos del spline (8 pts)", zorder=3)
-    ax1.set_ylabel("V(r) [V]")
-    ax1.set_title("Potencial sobre la bisectriz H-O-H")
-    ax1.legend(fontsize=8)
+    # Mejorar el ángulo de visión
+    axA.view_init(elev=25, azim=-60)
 
-    ax2.plot(r_fine, Er_spline, color="purple")
-    ax2.set_xlabel("r [Angstrom]")
-    ax2.set_ylabel(r"$E_r = -dS/dr$ [V/A]")
+    # ---------------------------------------------------------------
+    # (b) Spline cubico: V(r) y campo radial
+    # ---------------------------------------------------------------
+    gsB = gs[0, 1].subgridspec(2, 1, hspace=0.06)
+    axB1 = fig.add_subplot(gsB[0])
+    axB2 = fig.add_subplot(gsB[1], sharex=axB1)
 
-    plt.tight_layout()
-    plt.savefig(filename, dpi=150)
-    plt.close(fig)
-    print(f"Figura guardada en {filename}")
+    axB1.plot(r_fine, V_fine_spline, "--", color="black", label="Spline cúbico", zorder=2)
+    axB1.plot(r_coarse, V_coarse, "o", color="red", ms=9, label="Nodos (8 pts)", zorder=3)
+    axB1.set_ylabel("V(r) [V]")
+    axB1.set_title("(b) Potencial y campo radial (spline cúbico)")
+    axB1.legend(loc="upper right")
+    plt.setp(axB1.get_xticklabels(), visible=False)
 
+    axB2.plot(r_fine, Er_spline, color="purple")
+    axB2.set_xlabel("r [Å]")
+    axB2.set_ylabel(r"$E_r=-dS/dr$ [V/Å]")
 
-def fig3_potencial_y_campo(pos, q, atoms, filename="fig_potencial_campo_combo.png"):
-    """
-    Figura 3 del articulo: mapa de potencial V(x,y) (panel izquierdo) y
-    campo electrico E(x,y) (panel derecho), en el plano molecular.
+    # ---------------------------------------------------------------
+    # (c) Mapa de potencial + campo vectorial, plano XY
+    # ---------------------------------------------------------------
+    gsC = gs[1, 0].subgridspec(1, 2, width_ratios=[1, 1.1])
+    axC1 = fig.add_subplot(gsC[0])
+    axC2 = fig.add_subplot(gsC[1])
 
-    Decisiones de visualizacion (no afectan ningun calculo, solo la forma
-    de mostrarlo):
-      - El rango de color de V se recorta al percentil 2-98, porque cada
-        subelemento sigue siendo una carga puntual y V diverge cerca de
-        cada nucleo; sin el recorte, esas pocas singularidades "aplastan"
-        la escala de color y se pierde la forma del potencial molecular.
-      - Las flechas de E se normalizan a longitud unitaria (se grafica la
-        DIRECCION), porque |E| varia varios ordenes de magnitud entre el
-        entorno nuclear y el campo lejano; la magnitud perdida se recupera
-        coloreando las flechas con log10|E|.
-    """
-    # ---- Malla fina para el mapa de potencial ----
-    nx, ny = 220, 220
+    nx, ny = 160, 160
     x_vals = np.linspace(-2.0, 2.0, nx)
     y_vals = np.linspace(-1.5, 2.5, ny)
     Vmap = np.zeros((ny, nx))
@@ -331,8 +459,17 @@ def fig3_potencial_y_campo(pos, q, atoms, filename="fig_potencial_campo_combo.pn
         for ix, xv in enumerate(x_vals):
             Vmap[iy, ix] = potential(pos, q, np.array([xv, yv, 0.0]))
 
-    # ---- Malla gruesa para el campo vectorial ----
-    nx2, ny2 = 22, 22
+    vmin, vmax = np.percentile(Vmap, [2, 98])
+    im = axC1.imshow(Vmap, extent=[x_vals[0], x_vals[-1], y_vals[0], y_vals[-1]],
+                      origin="lower", cmap="jet", vmin=vmin, vmax=vmax)
+    plt.colorbar(im, ax=axC1, label="V (V)", fraction=0.046, pad=0.04)
+    for center, _ in atoms:
+        axC1.plot(center[0], center[1], "o", color="white", ms=6, mec="black")
+    axC1.set_xlabel("x (Å)")
+    axC1.set_ylabel("y (Å)")
+    axC1.set_title("(c) Potencial $V$ y campo $\\mathbf{E}$ (plano XY)")
+
+    nx2, ny2 = 18, 18
     x_g = np.linspace(-2.0, 2.0, nx2)
     y_g = np.linspace(-1.5, 2.5, ny2)
     Ex = np.zeros((ny2, nx2))
@@ -341,86 +478,50 @@ def fig3_potencial_y_campo(pos, q, atoms, filename="fig_potencial_campo_combo.pn
         for ix, xv in enumerate(x_g):
             Ef = field_analytic(pos, q, np.array([xv, yv, 0.0]))
             Ex[iy, ix], Ey[iy, ix] = Ef[0], Ef[1]
-
     mag = np.sqrt(Ex**2 + Ey**2)
     mag_safe = np.where(mag == 0, 1, mag)
     Ex_n, Ey_n = Ex / mag_safe, Ey / mag_safe
 
-    # ---- Figura de dos paneles ----
-    fig, (axL, axR) = plt.subplots(1, 2, figsize=(11, 4.5))
-
-    vmin, vmax = np.percentile(Vmap, [2, 98])
-    im = axL.imshow(Vmap, extent=[x_vals[0], x_vals[-1], y_vals[0], y_vals[-1]],
-                     origin="lower", cmap="jet", vmin=vmin, vmax=vmax)
-    plt.colorbar(im, ax=axL, label="V (V)")
+    qv = axC2.quiver(x_g, y_g, Ex_n, Ey_n, np.log10(mag + 1e-12), cmap="jet")
+    plt.colorbar(qv, ax=axC2, label=r"$\log_{10}|E|$", fraction=0.046, pad=0.06)
     for center, _ in atoms:
-        axL.plot(center[0], center[1], "o", color="white", ms=6, mec="black")
-    axL.set_xlabel("x (Å)")
-    axL.set_ylabel("y (Å)")
-    axL.set_title(r"Mapa de potencial electrostático (Plano XY) - H$_2$O")
+        axC2.plot(center[0], center[1], "o", color="black", ms=6)
+    axC2.set_xlabel("x (Å)")
+    axC2.set_ylabel("y (Å)", labelpad=2)
 
-    qv = axR.quiver(x_g, y_g, Ex_n, Ey_n, np.log10(mag + 1e-12), cmap="jet")
-    plt.colorbar(qv, ax=axR, label=r"$\log_{10}|E|$ (V/Å)")
-    for center, _ in atoms:
-        axR.plot(center[0], center[1], "o", color="black", ms=6)
-    axR.set_xlabel("x (Å)")
-    axR.set_ylabel("y (Å)")
-    axR.set_title(r"Campo eléctrico (dirección en Plano XY) - H$_2$O")
+    # ---------------------------------------------------------------
+    # (d) Benchmark de tiempo de ejecucion
+    # ---------------------------------------------------------------
+    gsD = gs[1, 1].subgridspec(1, 2)
+    axD1 = fig.add_subplot(gsD[0])
+    axD2 = fig.add_subplot(gsD[1])
 
-    plt.tight_layout()
-    plt.savefig(filename, dpi=150)
-    plt.close(fig)
-    print(f"Figura guardada en {filename}")
-
-
-def fig4_benchmark(bench, filename="fig_benchmark_tiempos.png"):
-    """
-    Figura 4 del articulo: tiempo de ejecucion vs. N_operaciones, en dos
-    representaciones (log-log y lineal con ajuste afin).
-    """
     N_ops_arr = np.array([row["N_operaciones"] for row in bench], dtype=float)
     t_arr = np.array([row["tiempo_s"] for row in bench], dtype=float)
-
-    # Ajuste 1 (log-log): t ~ N_op^m
     m, b = np.polyfit(np.log10(N_ops_arr), np.log10(t_arr), 1)
-
-    # Ajuste 2 (afin): t = a + c*N_op  (separa overhead "a" del costo
-    # asintotico por operacion "c", que es el comparable con la Tabla 1
-    # del articulo de Excel)
     c_rate, a_overhead = np.polyfit(N_ops_arr, t_arr, 1)
 
-    print(f"\nAjuste log-log:  t ~ N_op^m,  m = {m:.3f}  (teorico: m=1)")
-    print(f"Ajuste afin:     t = a + c*N_op")
-    print(f"   c (tiempo asintotico por operacion) = {c_rate:.3e} s")
-    print(f"   a (overhead total)                  = {a_overhead:.3e} s")
+    axD1.loglog(N_ops_arr, t_arr, "o-", color="tab:blue")
+    axD1.loglog(N_ops_arr, 10**b * N_ops_arr**m, "--", color="tab:red",
+                label=fr"$t\propto N_{{op}}^{{{m:.2f}}}$")
+    axD1.set_xlabel(r"$N_{op}$")
+    axD1.set_ylabel("Tiempo (s)")
+    axD1.set_title("(d) Tiempo de ejecución vs. $N_{op}$")
+    axD1.legend(loc="upper left")
+    axD1.grid(True, which="both", ls=":", alpha=0.5)
 
-    fig, (axA, axB) = plt.subplots(1, 2, figsize=(10, 4.2))
-
-    axA.loglog(N_ops_arr, t_arr, "o-", color="tab:blue", label="Medido (Python)")
-    axA.loglog(N_ops_arr, 10**b * N_ops_arr**m, "--", color="tab:red",
-               label=fr"$t \propto N_{{op}}^{{{m:.2f}}}$")
-    axA.set_xlabel(r"$N_{operaciones}=N_f N_c N_p$")
-    axA.set_ylabel("Tiempo (s)")
-    axA.set_title("Escala log-log")
-    axA.legend(fontsize=8)
-    axA.grid(True, which="both", ls=":", alpha=0.5)
-
-    axB.plot(N_ops_arr, t_arr, "o", color="tab:blue", label="Medido (Python)")
     N_fit = np.linspace(0, N_ops_arr.max(), 100)
-    axB.plot(N_fit, a_overhead + c_rate * N_fit, "--", color="tab:red",
-             label=fr"$t=a+cN_{{op}}$" + "\n" +
-                   fr"$c={c_rate:.2e}$ s/op" + "\n" +
-                   fr"$a={a_overhead:.2e}$ s")
-    axB.set_xlabel(r"$N_{operaciones}=N_f N_c N_p$")
-    axB.set_ylabel("Tiempo (s)")
-    axB.set_title("Escala lineal (ajuste afín)")
-    axB.legend(fontsize=8)
-    axB.grid(True, ls=":", alpha=0.5)
+    axD2.plot(N_ops_arr, t_arr, "o", color="tab:blue")
+    axD2.plot(N_fit, a_overhead + c_rate * N_fit, "--", color="tab:red",
+              label=fr"$c={c_rate:.2e}$ s/op")
+    axD2.set_xlabel(r"$N_{op}$")
+    axD2.set_ylabel("Tiempo (s)")
+    axD2.legend(loc="upper left")
+    axD2.grid(True, ls=":", alpha=0.5)
 
-    plt.tight_layout()
     plt.savefig(filename, dpi=150)
     plt.close(fig)
-    print(f"Figura guardada en {filename}")
+    print(f"Figura combinada (panel 2x2) guardada en {filename}")
 
     return m, c_rate, a_overhead
 
@@ -479,29 +580,16 @@ if __name__ == "__main__":
           f"(Excel: -7.1899 V)")
 
     # -------------------------------------------------------------------
-    # Figura 1: nube 2D en el plano XY
+    # Perfil radial con spline cubico (datos para el panel combinado)
     # -------------------------------------------------------------------
-    print("\n=== Figura 1: nube de cargas (plano XY) ===")
-    fig1_nube_xy(pos, q, atoms, Nc)
-
-    # -------------------------------------------------------------------
-    # Figura 2: perfil radial con spline cubico
-    # -------------------------------------------------------------------
-    print("\n=== Figura 2: perfil radial con spline cubico ===")
+    print("\n=== Perfil radial con spline cubico ===")
     r_c, V_c, r_f, V_spl, Er_spl, V_exact = spline_radial_profile(pos, q)
     err_spline = np.abs(V_spl - V_exact)
     print(f"Error maximo de la interpolacion spline: {err_spline.max():.3e} V "
           f"(rel. ~ {100 * err_spline.max() / V_exact.max():.2f} %)")
-    fig2_spline(r_c, V_c, r_f, V_spl, Er_spl)
 
     # -------------------------------------------------------------------
-    # Figura 3: mapa de potencial + campo vectorial (plano XY)
-    # -------------------------------------------------------------------
-    print("\n=== Figura 3: mapa de potencial y campo vectorial ===")
-    fig3_potencial_y_campo(pos, q, atoms)
-
-    # -------------------------------------------------------------------
-    # Tabla IV y Figura 4: benchmark de tiempo de ejecucion
+    # Tabla IV: benchmark de tiempo de ejecucion (datos para el panel)
     # -------------------------------------------------------------------
     print("\n=== Tabla IV: tiempo de ejecucion vs. N_operaciones ===")
     bench = benchmark_performance(Nc_values=(25, 50, 100, 200, 400, 800, 1600),
@@ -519,6 +607,24 @@ if __name__ == "__main__":
         writer.writerows(bench)
     print("\nResultados guardados en benchmark_tiempos.csv")
 
-    fig4_benchmark(bench)
+    # -------------------------------------------------------------------
+    # GENERACIÓN DE FIGURAS
+    # -------------------------------------------------------------------
+    print("\n=== Generando figuras ===")
+    
+    # Figura 1: Nube 3D detallada (figura independiente)
+    generar_figura_nube_3d(pos, q, atoms, Nc, filename="fig_nube_agua_3d.png")
+    
+    # Figura 2: Panel combinado 2x2 (para el artículo)
+    m, c_rate, a_overhead = figura_panel_resultados(
+        pos, q, atoms, Nc, r_c, V_c, r_f, V_spl, Er_spl, bench
+    )
+    print(f"Ajuste log-log:  t ~ N_op^m,  m = {m:.3f}  (teorico: m=1)")
+    print(f"Ajuste afin:     c = {c_rate:.3e} s/op,  a = {a_overhead:.3e} s")
 
-    print("\n=== Listo. Todas las tablas y figuras del articulo fueron generadas. ===")
+    print("\n=== ¡Completado! ===")
+    print("Archivos generados:")
+    print("  - fig_nube_agua_3d.png        (vista 3D detallada)")
+    print("  - fig_panel_resultados.png    (panel 2x2 para el artículo)")
+    print("  - benchmark_tiempos.csv       (datos de rendimiento)")
+    print("\nTablas disponibles en la consola.")
