@@ -4,7 +4,7 @@ from scipy.interpolate import CubicSpline
 
 # Función original
 def f(x):
-    return np.sin(x)
+    return x**3 - 4*x + 1
 
 # Puntos de la función
 x = np.linspace(0, 2*np.pi, 10)
