@@ -7,7 +7,6 @@
 def f(x):
     return x**2
 
-
 # Punto donde queremos calcular la derivada
 x = 2
 
