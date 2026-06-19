@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6303632-1525-4370-9509-b25e466d0b3f" name="Changes" comment="stack y Queue añadido">
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso1_Proyecto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso1_Simulacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso2_Proyecto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso2_Simulacion.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso3_Proyecto.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso3_Simulacion.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CristianV/Corte 3/Proyecto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CristianV/CristianPython/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/CristianV/CristianPython/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,12 +49,12 @@
     &quot;assignee&quot;: &quot;Rafael-Lemus&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dnlxorr/fisica_computacional_I_2026-I.git&quot;,
-    &quot;accountId&quot;: &quot;a35856e9-92f3-4260-891a-01a3837e003d&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dnlxorr/fisica_computacional_I_2026-I.git",
+    "accountId": "a850202f-e134-4930-9b2a-4c93aae33a40"
   }
-}</component>
+}]]></component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Rafael_Lemus/Python/stack y Queue.py" root0="SKIP_INSPECTION" />
   </component>
@@ -93,6 +90,7 @@
     "Python.Error_Redondeo (2).executor": "Run",
     "Python.Error_Redondeo.executor": "Run",
     "Python.hello world.executor": "Run",
+    "Python.proyecto.executor": "Run",
     "Python.stack y Queue.executor": "Run",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -102,7 +100,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ai.playground.ignore.import.keys.banner.in.settings": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "Articulo__SharoonJ",
+    "git-widget-placeholder": "97-tercer-corte-cristian-vargas",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "node.js.detected.package.eslint": "true",
@@ -115,7 +113,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Python.Caso3_Proyecto">
+  <component name="RunManager" selected="Python.Codigos del corte">
     <configuration name="Caso3_Proyecto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="fisica_computacional_I_2026-I" />
       <option name="ENV_FILES" value="" />
@@ -131,6 +129,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="RUN_TOOL" value="" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/SharoonJ/Articulo_SharoonJ/Caso3_Proyecto.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Codigos del corte" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/Corte 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/Corte 3/Codigos del corte.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -163,12 +184,40 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="proyecto" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="fisica_computacional_I_2026-I" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/CristianV/Corte 3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="RUN_TOOL" value="" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CristianV/Corte 3/proyecto.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Python.Grafica_Aproximacion_Taylor" />
+      <item itemvalue="Python.Codigos del corte" />
+      <item itemvalue="Python.proyecto" />
       <item itemvalue="Python.Caso3_Proyecto" />
       <item itemvalue="Python.Dataset_Clima_Barras" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Codigos del corte" />
+        <item itemvalue="Python.proyecto" />
         <item itemvalue="Python.Caso3_Proyecto" />
         <item itemvalue="Python.Dataset_Clima_Barras" />
       </list>
